@@ -6,6 +6,7 @@ class TaxCalculator extends React.Component {
     return (
       <section>
         <Button label="calculate" />
+        <p data-testhook-id="tax-calculator-total">Placeholder</p>
       </section>
     );
   }
