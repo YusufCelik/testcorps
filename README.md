@@ -1,17 +1,17 @@
 # Testcorps excersizes
 
-## Excersize 1: set-up
+## Excersize 2: anatomy of a test: adding our first test
 
-1. Open your command line prompt / terminal and go to the folder of where you unpacked or downloaded the project. E.g.:
+1. Create the file TaxCalculator.test.js in the 'src' folder
+
+`Theory: all .test files are auto detected by our setup`
+
+2. Add the following code
 
 ```
-cd ~/projects/testcorps
-```
-
-2. Install project
-
-```console
-npm install
+describe("<TaxCalculator />", () => {
+  it("as of yet does nothing", () => {});
+});
 ```
 
 3. Run tests
@@ -20,8 +20,4 @@ npm install
 npm test
 ```
 
-If everything went correctly, you should now see our first test report:
-
-```PASS  src/App.test.js
-  ✓ renders without crashing (18ms)
-```
+If everything went correctly, you should now see the "as of yet does nothing" being reported in our test report.
