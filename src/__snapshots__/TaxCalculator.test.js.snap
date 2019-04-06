@@ -2,12 +2,15 @@
 
 exports[`<TaxCalculator /> renders calculate button 1`] = `
 <section>
+  <p>
+    1554563011121
+  </p>
   <input
     data-testhook-id="tax-calculator-revenue-input"
     type="number"
   />
   <Button
-    label="shmalculate"
+    label="calculate"
     onClick={[Function]}
   />
   <p
