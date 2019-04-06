@@ -20,6 +20,7 @@ class TaxCalculator extends React.Component {
   render() {
     return (
       <section>
+        <h1 data-testhook-id="tax-calculator-title">Tax Calculator</h1>
         <p>{Date.now()}</p>
         <input
           data-testhook-id="tax-calculator-revenue-input"
