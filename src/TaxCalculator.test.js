@@ -6,6 +6,7 @@ import Button from "./Button";
 
 describe("<TaxCalculator />", () => {
   it("renders calculate button", () => {
+    Date.now = jest.fn(() => 1482363367071);
     const wrapper = shallow(<TaxCalculator />);
     expect(wrapper).toMatchSnapshot();
   });

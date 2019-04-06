@@ -3,7 +3,7 @@
 exports[`<TaxCalculator /> renders calculate button 1`] = `
 <section>
   <p>
-    1554563011121
+    1482363367071
   </p>
   <input
     data-testhook-id="tax-calculator-revenue-input"
