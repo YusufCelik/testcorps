@@ -25,7 +25,7 @@ class TaxCalculator extends React.Component {
           type="number"
           ref={ref => (this.revenueInput = ref)}
         />
-        <Button label="calculate" onClick={() => this.changeLabel()} />
+        <Button label="shmalculate" onClick={() => this.changeLabel()} />
         <p data-testhook-id="tax-calculator-total">{this.state.total}</p>
       </section>
     );

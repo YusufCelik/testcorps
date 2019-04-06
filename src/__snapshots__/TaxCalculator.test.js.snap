@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TaxCalculator /> renders calculate button 1`] = `
+<section>
+  <input
+    data-testhook-id="tax-calculator-revenue-input"
+    type="number"
+  />
+  <Button
+    label="shmalculate"
+    onClick={[Function]}
+  />
+  <p
+    data-testhook-id="tax-calculator-total"
+  >
+    0
+  </p>
+</section>
+`;
