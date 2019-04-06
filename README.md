@@ -1,55 +1,35 @@
 # Testcorps excersizes
 
-## Excersize 5: synthetic events
+## Excersize 6: state verification
 
 1. Open the file TaxCalculator.test.js in the 'src' folder
-2. Update the import to include also 'mount', e.g. `import { shallow, mount } from "enzyme"`
-3. Let's extend our tests by adding another test
+2. Let's extend our tests after the following:
+
+````
+expect(
+    wrapper.find('[data-testhook-id="tax-calculator-total"]').text()
+).toEqual("20");```
+````
+
+by adding this line:
 
 ```
-  it("changes tax total when user clicks calculate", () => {
-  })
-```
-
-4. This time we will mount the component by adding these lines within the test
+expect(wrapper.instance().state).toEqual({ total: "20" });
 
 ```
-    const wrapper = mount(<TaxCalculator />);
-```
 
-4. Now we can give a custom input value (as if we typed them by keyboard)
-
-```
-    wrapper
-      .find('[data-testhook-id="tax-calculator-revenue-input"]')
-      .instance().value = "20";
-```
-
-5. Finally we can now simulate a keyboard change event
+3. Let's set the state directly, and verify whether
+   the total's label has changed. Add these lines:
 
 ```
-    wrapper
-      .find('[data-testhook-id="tax-calculator-revenue-input"]')
-      .simulate("change");
+wrapper.setState({ total: "40" });
+expect(
+    wrapper.find('[data-testhook-id="tax-calculator-total"]').text()
+).toEqual("40");
 ```
 
-6. We will now find the button and simulate a click event
+4. Finally, we can run our tests again
 
 ```
-    wrapper.find(Button).simulate("click");
-```
-
-7. Now we have come to the moment to test whether the totals
-   label has displayed the value that was put in
-
-```
-    expect(
-      wrapper.find('[data-testhook-id="tax-calculator-total"]').text()
-    ).toEqual("20");
-```
-
-8. Finally, we can run our tests again
-
-```
-    npm test
+npm test
 ```

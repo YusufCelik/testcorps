@@ -12,7 +12,6 @@ class TaxCalculator extends React.Component {
   }
 
   changeLabel() {
-    console.log("changing label");
     this.setState({
       total: this.revenueInput.value
     });
