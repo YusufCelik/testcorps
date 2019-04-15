@@ -2,6 +2,9 @@
 
 ## Excersize 3: shallow mount and verification
 
+Context of assertion: we are going to mount a React component
+, in this case a TaxCalculator, and verify whether it renders an expected element, i.e. a Button component, properly.
+
 1. Create the file TaxCalculator.test.js in the 'src' folder
 
 `Theory: all .test files are auto detected by our setup`
