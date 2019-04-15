@@ -2,6 +2,8 @@
 
 ## Excersize 5: synthetic events
 
+Context of assertion: we are going to simulate keyboard and mouse events in order to see whether a certain result is outputted.
+
 1. Open the file TaxCalculator.test.js in the 'src' folder
 2. Update the import to include also 'mount', e.g. `import { shallow, mount } from "enzyme"`
 3. Let's extend our tests by adding another test
