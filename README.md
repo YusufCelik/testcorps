@@ -1,6 +1,6 @@
 # Testcorps excersizes
 
-## Excersize 1: set-up
+## Excersize 1: running tests
 
 1. Open your command line prompt / terminal and go to the folder of where you unpacked or downloaded the project. E.g.:
 
