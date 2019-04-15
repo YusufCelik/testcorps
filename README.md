@@ -2,6 +2,8 @@
 
 ## Excersize 6: state verification
 
+Context of assertion: this an integration test, i.e. we wish to see whether state changes render the correct values in the right place.
+
 1. Open the file TaxCalculator.test.js in the 'src' folder
 2. Let's extend our tests after the following:
 
